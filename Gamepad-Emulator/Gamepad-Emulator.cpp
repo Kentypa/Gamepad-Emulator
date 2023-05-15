@@ -59,7 +59,6 @@ LRESULT CALLBACK Hook(int nCode, WPARAM wParam, LPARAM lParam)
         }
 
     }
-    // Вызов цепочки обработчиков
     return CallNextHookEx(NULL, nCode, wParam, lParam);
 }
 
